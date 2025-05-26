@@ -1,0 +1,221 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:p="http://schemas.uipath.com/workflow/activities/python" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ss="clr-namespace:System.Security;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:umae="clr-namespace:UiPath.Mail.Activities.Enums;assembly=UiPath.Mail.Activities" xmlns:umame="clr-namespace:UiPath.MicrosoftOffice365.Activities.Mail.Enums;assembly=UiPath.Mail.Activities" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Numerics</x:String>
+      <x:String>UiPath.Python</x:String>
+      <x:String>UiPath.Python.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.MicrosoftOffice365.Activities.Mail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Enums</x:String>
+      <x:String>UiPath.Mail.SMTP.Activities</x:String>
+      <x:String>UiPath.Mail.Activities</x:String>
+      <x:String>System.Net</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Runtime.Numerics</AssemblyReference>
+      <AssemblyReference>System.Linq.Async</AssemblyReference>
+      <AssemblyReference>UiPath.Python</AssemblyReference>
+      <AssemblyReference>UiPath.Python.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Net.WebClient</AssemblyReference>
+      <AssemblyReference>System.Net.Primitives</AssemblyReference>
+      <AssemblyReference>System.Net.HttpListener</AssemblyReference>
+      <AssemblyReference>System.Net.WebProxy</AssemblyReference>
+      <AssemblyReference>System.Net.NameResolution</AssemblyReference>
+      <AssemblyReference>System.Net.WebHeaderCollection</AssemblyReference>
+      <AssemblyReference>System.Net.Requests</AssemblyReference>
+      <AssemblyReference>System.Net.ServicePoint</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="624.4000000000001,1477.6" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Name="epostaMesaji" />
+      <Variable x:TypeArguments="ss:SecureString" Name="ParolaEposta" />
+      <Variable x:TypeArguments="x:String" Name="kararMesaji" />
+      <Variable x:TypeArguments="p:PythonObject" Name="sonucPython" />
+      <Variable x:TypeArguments="p:PythonObject" Name="pyScript" />
+      <Variable x:TypeArguments="x:Object" Name="parametreler" />
+      <Variable x:TypeArguments="x:Double" Name="talep" />
+      <Variable x:TypeArguments="x:String" Name="talepStr" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:PythonScope OperationTimeout="{x:Null}" DisplayName="Python Scope - Python dosya yolunun eklenmesi" sap:VirtualizedContainerService.HintSize="500.8,1454.4" sap2010:WorkflowViewState.IdRef="PythonScope_1" LibraryPath="C:\Users\HP\AppData\Local\Programs\Python\Python312\python312.dll" Path="C:\Users\HP\AppData\Local\Programs\Python\Python312\" TargetPlatform="x64">
+      <p:PythonScope.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="PythonEngineSessionProperty" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Yap" sap:VirtualizedContainerService.HintSize="467.2,1394.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <x:Boolean x:Key="IsPinned">False</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <p:LoadScript Code="{x:Null}" DisplayName="Load Python Script - Dosya yolu tanımlanması" sap:VirtualizedContainerService.HintSize="433.6,92" sap2010:WorkflowViewState.IdRef="LoadScript_2" Result="[pyScript]" ScriptFile="C:\Users\HP\Desktop\DOĞRU HESAPLAYAN KOD\karar_modulu_uipath.py">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </p:LoadScript>
+            <ui:InputDialog Options="{x:Null}" OptionsString="{x:Null}" DisplayName="Input Dialog - Kullanıcıdan bilgi al" sap:VirtualizedContainerService.HintSize="433.6,273.6" sap2010:WorkflowViewState.IdRef="InputDialog_2" IsPassword="False" Label="Talep edilen kredi tutarını giriniz (sadece rakam):" Title="Kredi Talebi">
+              <ui:InputDialog.Result>
+                <OutArgument x:TypeArguments="x:String">[talepStr]</OutArgument>
+              </ui:InputDialog.Result>
+            </ui:InputDialog>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[talep]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double">[CDbl (talepStr)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Object">[parametreler]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Object">[New List(Of Object) From {talep}]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <p:InvokeMethod DisplayName="Invoke Python Method - Python fonksiyonunun çağırılması" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="InvokeMethod_1" Instance="[pyScript]" Name="karar_modulu_yurut" Parameters="[New List(Of Object) From {talep}]" Result="[sonucPython]" />
+            <p:GetObject x:TypeArguments="x:String" DisplayName="Get Python Object - Python nesnesini al" sap:VirtualizedContainerService.HintSize="433.6,122.4" sap2010:WorkflowViewState.IdRef="GetObject`1_2" PythonObject="[sonucPython]" Result="[kararMesaji]" />
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_5">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">[epostaMesaji]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">[kararMesaji + vbNewLine + vbNewLine + "Merhaba," + vbNewLine + "Firmanın finansal tablolarına göre yapılan analiz sonucunda Yeni Kredi Talebine İlişkin Verilen Karar yukarıda bilgilerinize sunulmuştur." + vbNewLine + vbNewLine + "Analist Robotunuz" + vbNewLine + vbNewLine + "Bu emaile lütfen geri dönüş yapmayınız."]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="ss:SecureString">[ParolaEposta]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="ss:SecureString">[new System.Net.NetworkCredential("", "icft xwxd twuz wcqi").SecurePassword]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:SendMail Bcc="{x:Null}" Cc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" Result="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="[epostaMesaji]" ConnectionMode="LegacyConfiguration" DisplayName="Send SMTP Email - Karar'ı mail gönder" Email="kardelensenas@gmail.com" EnableSSL="True" From="kardelensenas@gmail.com" sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="False" IsBodyHtml="False" Name="KRD ANALYST BOT" Port="465" SecureConnection="SslOnConnect" SecurePassword="[ParolaEposta]" Server="smtp.gmail.com" Subject="Yeni Kredi Talebi Kararı" To="kardelensenas@gmail.com" UseISConnection="False">
+              <ui:SendMail.AttachmentsBackup>
+                <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:Dictionary x:TypeArguments="umame:AttachmentInputMode, scg:List(x:Object)" />
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </ui:SendMail.AttachmentsBackup>
+              <ui:SendMail.ConnectionDetailsBackupSlot>
+                <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="LegacyConfiguration">
+                  <usau:BackupSlot.BackupValues>
+                    <scg:List x:TypeArguments="x:Object" x:Key="IntegrationService" Capacity="1">
+                      <x:Null />
+                    </scg:List>
+                  </usau:BackupSlot.BackupValues>
+                </usau:BackupSlot>
+              </ui:SendMail.ConnectionDetailsBackupSlot>
+              <ui:SendMail.Files>
+                <scg:List x:TypeArguments="InArgument(x:String)" Capacity="0" />
+              </ui:SendMail.Files>
+            </ui:SendMail>
+          </Sequence>
+        </ActivityAction>
+      </p:PythonScope.Body>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </p:PythonScope>
+  </Sequence>
+</Activity>
